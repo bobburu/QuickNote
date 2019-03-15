@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notes_item_card"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@drawable/list_item_bg"
+    android:foreground="?android:selectableItemBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:singleLine="true"
+        android:textColor="#424242"
+        android:textSize="15sp"
+        tools:text="@string/temp_title" />
+
+    <TextView
+        android:id="@+id/item_notes_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:singleLine="true"
+        android:textColor="#757575"
+        android:textSize="14sp"
+        tools:text="@string/temp_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="6dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/date_stamp_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:textColor="#9E9E9E"
+            android:textSize="12sp"
+            tools:text="13 Jan, 2019" />
+
+        <TextView
+            android:id="@+id/time_stamp_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dp"
+            android:textColor="#9E9E9E"
+            android:textSize="12sp"
+            tools:text="10:00 PM" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
